@@ -1,0 +1,104 @@
+body {
+	background-color: #111;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto Slab', serif;
+}
+
+h2 {
+	font-size: 1em;
+	margin: 1.6em 2em;
+	color: #999;
+	text-align: center;
+}
+
+body, a {
+	color: #eee;
+}
+
+.header, .footer {
+	padding: 2em;
+}
+
+.header {
+	padding-top: 1.5em;
+	background-color: #C0650B;
+}
+.header h1 {
+	font-size: 4em;
+	margin: 0;
+}
+.header h3, .header h4 {
+	font-size: 1em;
+	margin: 0;
+}
+.header h3 {
+	color: #FFDFBF;
+}
+.header h4 {
+	margin-top: 1em;
+}
+.header a.contact {
+	display: inline-block;
+	padding: 0.6em 1em;
+	background-color: #804307;
+	border-radius: 0.2em;
+}
+
+#contested-space {
+	background-image: url('images/death-blow.jpeg');
+	background-position: center;
+}
+
+.project {
+	position: relative;
+	min-height: 44em;
+	margin: 2em 0;
+}
+.project h3 {
+	font-size: 2em;
+	padding: 0.8em 1em;
+	margin: 0;
+	background-color: #000;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.project p {
+	margin: 1em;
+	padding: 1em;
+	background-color: #000;
+	background-color: rgba(0, 0, 0, 0.7);
+	width: 33%;
+}
+.project .time {
+	position: absolute;;
+	top: 1.6em;
+	right: 2em;
+	margin: 0;
+}
+.project .tools {
+	position: absolute;
+	bottom: 2em;
+	right: 2em;
+}
+.project .tools h4 {
+	display: none;
+}
+.project .tools ul {
+	margin: 0;
+	padding: 0;
+}
+.project .tools li {
+	display: block;
+	float: left;
+	font-size: 1em;
+	padding: 0.3em 0.5em;
+	background-color: #eee;
+	border-radius: 0.2em;
+	color: #111;
+	margin-left: 1em;
+}
