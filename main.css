@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
 	font-size: 1em;
-	margin: 1.6em 2em;
+	margin: 1.5em;
 	color: #999;
 	text-align: center;
 }
@@ -48,51 +48,49 @@ body, a {
 	padding: 0.6em 1em;
 	background-color: #804307;
 	border-radius: 0.2em;
-}
-
-#contested-space {
-	background-image: url('images/death-blow.jpeg');
-	background-position: center;
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
 }
 
 .project {
 	position: relative;
-	min-height: 44em;
-	margin: 2em 0;
+	margin: 1.5em 0;
+	background: #333;
 }
 .project h3 {
 	font-size: 2em;
-	padding: 0.8em 1em;
 	margin: 0;
-	background-color: #000;
-	background-color: rgba(0, 0, 0, 0.4);
-}
-.project p {
-	margin: 1em;
-	padding: 1em;
-	background-color: #000;
-	background-color: rgba(0, 0, 0, 0.7);
-	width: 33%;
 }
 .project .time {
-	position: absolute;;
-	top: 1.6em;
-	right: 2em;
 	margin: 0;
+	font-size: 1em;
+	text-align: right;
 }
-.project .tools {
+
+.project.full {
+	min-height: 44em;
+	overflow: hidden;
+}
+.project.full .details {
+	margin: 2em;
+	padding: 1em 1.5em 1.5em;
+	background-color: #000;
+	background-color: rgba(0, 0, 0, 0.75);
+	width: 40%;
+}
+.project.full .tools {
 	position: absolute;
 	bottom: 2em;
 	right: 2em;
 }
-.project .tools h4 {
+.project.full .tools h4 {
 	display: none;
 }
-.project .tools ul {
+.project.full .tools ul {
 	margin: 0;
 	padding: 0;
 }
-.project .tools li {
+.project.full .tools li {
 	display: block;
 	float: left;
 	font-size: 1em;
@@ -101,4 +99,27 @@ body, a {
 	border-radius: 0.2em;
 	color: #111;
 	margin-left: 1em;
+}
+
+.project.partial {
+	padding: 1.5em 2em 2em;
+}
+.project.partial .time {
+	position: absolute;
+	right: 2em;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#contested-space {
+	background-image: url('images/death-blow.jpeg');
+	background-position: center;
+}
+
+#sdash {
+	background-color: #348041;
+}
+
+#resite {
+	background-color: #084e80;
 }
