@@ -12,38 +12,36 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
 	font-size: 1em;
-	margin: 1.5em;
 	color: #999;
 	text-align: center;
+	line-height: 10em;
+	margin: 0;
 }
 
 body, a {
 	color: #eee;
 }
 
-.header, .footer {
+.title {
 	padding: 2em;
-}
-
-.header {
 	padding-top: 1.5em;
 	background-color: #C0650B;
 }
-.header h1 {
+.title h1 {
 	font-size: 4em;
 	margin: 0;
 }
-.header h3, .header h4 {
+.title h3, .title h4 {
 	font-size: 1em;
 	margin: 0;
 }
-.header h3 {
+.title h3 {
 	color: #FFDFBF;
 }
-.header h4 {
+.title h4 {
 	margin-top: 1em;
 }
-.header a.contact {
+.title a.contact {
 	display: inline-block;
 	padding: 0.6em 1em;
 	background-color: #804307;
@@ -54,43 +52,45 @@ body, a {
 
 .project {
 	position: relative;
-	margin: 1.5em 0;
 	background: #333;
+	margin-bottom: 10em;
 }
-.project h3 {
+.project .header {
+	position: relative;
+	padding: 1.5em 2em 2em;
+}
+.project .header h3 {
 	font-size: 2em;
 	margin: 0;
 }
-.project .time {
+.project .header .time {
+	position: absolute;
+	right: 2em;
+	top: 50%;
+	transform: translateY(-50%);
 	margin: 0;
 	font-size: 1em;
 	text-align: right;
 }
 
-.project.full {
+.project .background {
 	min-height: 44em;
 	overflow: hidden;
 }
-.project.full .details {
-	margin: 2em;
-	padding: 1em 1.5em 1.5em;
-	background-color: #000;
-	background-color: rgba(0, 0, 0, 0.75);
-	width: 40%;
-}
-.project.full .tools {
+
+.project .tools {
 	position: absolute;
 	bottom: 2em;
 	right: 2em;
 }
-.project.full .tools h4 {
+.project .tools h4 {
 	display: none;
 }
-.project.full .tools ul {
+.project .tools ul {
 	margin: 0;
 	padding: 0;
 }
-.project.full .tools li {
+.project .tools li {
 	display: block;
 	float: left;
 	font-size: 1em;
@@ -101,23 +101,32 @@ body, a {
 	margin-left: 1em;
 }
 
-.project.partial {
-	padding: 1.5em 2em 2em;
+#contested-space .header {
+	background-color: #168012;
+	background-position: top;
 }
-.project.partial .time {
-	position: absolute;
-	right: 2em;
-	top: 50%;
-	transform: translateY(-50%);
-}
-
-#contested-space {
+#contested-space .background {
 	background-image: url('images/death-blow.jpeg');
 	background-position: center;
 }
 
+#earbits {
+	margin: 0;
+}
+#earbits .header {
+	background-color: #99cb2c;
+	color: #111;
+}
+#earbits .header a {
+	color: #111;
+}
+#earbits .background {
+	background-image: url('images/earbits.jpeg');
+}
+
 #sdash {
 	background-color: #348041;
+	margin-bottom: 3em;
 }
 
 #resite {
