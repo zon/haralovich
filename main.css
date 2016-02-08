@@ -24,7 +24,7 @@ body, a {
 
 .title {
 	padding: 2em;
-	padding-top: 1.5em;
+	padding-top: 1.25em;
 	background-color: #C0650B;
 }
 .title h1 {
@@ -52,7 +52,6 @@ body, a {
 
 .project {
 	position: relative;
-	background: #333;
 	margin-bottom: 10em;
 }
 .project .header {
@@ -76,6 +75,7 @@ body, a {
 .project .background {
 	min-height: 44em;
 	overflow: hidden;
+	margin-top: 1.5em;
 }
 
 .project .tools {
@@ -131,4 +131,25 @@ body, a {
 
 #resite {
 	background-color: #084e80;
+}
+
+@media (min-resolution: 100dpi) {
+
+	h2 {
+		line-height: 5em;
+	}
+
+	.title h3 {
+		margin: 0.5em 0 1em;
+	}
+
+	.contact {
+		font-size: 3em;
+	}
+
+	.project .header .time,
+	.project .tools {
+		font-size: 2em;
+	}
+
 }
